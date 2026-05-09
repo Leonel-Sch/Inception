@@ -18,6 +18,7 @@
 Credentials are stored in the `srcs/.env` file. You will find:
 - DB User/Password
 - WordPress Admin/User info
+- If it's the first clone, it obviously need to be added (we dont git credentials here)
 
 ## Health Check
 Run `docker ps` to ensure all 3 containers show `Up`. Use `docker-compose logs -f` to monitor real-time activity.
