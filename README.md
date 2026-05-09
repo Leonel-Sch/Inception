@@ -29,3 +29,5 @@ This stack is built using **Docker Compose** to orchestrate the services within 
 ## Evaluations
 * To crash Nginx for example `docker exec -it nginx sh -c "nginx -s stop"`
 * To see the volumes `ls -la /home/lscheupl/data/wordpress`   `ls -la /home/lscheupl/data/wordpress`
+* To enter mariadb `docker exec -it mariadb bash` and `mysql -u root -p`
+* To show db tables `USE $SQL_DATABASE` `SHOW TABLES;`
