@@ -1,0 +1,14 @@
+[mysqld]
+# C'est la ligne la plus importante pour Inception !
+# 0.0.0.0 signifie "j'écoute toutes les connexions réseau arrivant sur le port 3306"
+bind-address            = 0.0.0.0
+
+# Le port standard
+port                    = 3306
+
+# Le répertoire où les données seront stockées physiquement
+# (C'est ce dossier qu'on liera à un volume Docker plus tard)
+datadir                 = /var/lib/mysql
+
+# L'utilisateur système qui fait tourner le processus
+user                    = mysql
